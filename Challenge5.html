@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+<head>
+  <title>JavaScript - Find Matching Strings</title>
+  <style media="screen">
+    body{
+      text-align: center;
+      background-color: teal;
+      margin-top: 250px;
+    }
+  </style>
+</head>
+
+  <body>
+    <h1>Find Matching Strings</h1>
+    <input maxlength="10" type="text" id="string1" >
+    <input maxlength="10" type="text" id="string2" >
+    <br/>
+    <br/>
+    <!--<button onclick="matchString()">Match Your Strings</button>-->
+    <button onclick = "matchString()">Match Your Strings</button>
+    <script>
+
+    function matchString(){
+
+      var firstString;
+      var secondString;
+      var st1;
+      var st2;
+
+      firstString = String(document.getElementById("string1").value);
+      secondString = String(document.getElementById("string2").value);
+
+      st1 = firstString.length;
+      st2 = secondString.length;
+
+
+      for(i = 0; i <= st1; i++){
+        for(z = 1; z <= st2; z++){
+          if(st1.charAt(i) == st2.charAt(y)){   //to find specific index in the string
+            console.log(st1.charAt(i));
+          }
+          if(st1.charAt(i) == st2.charAt(y)){
+            console.log(st2.charAt(y));
+          }
+        }
+      }
+
+    }
+
+    </script>
+  </body>
+</html>
